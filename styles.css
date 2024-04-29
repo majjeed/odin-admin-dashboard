@@ -22,7 +22,8 @@ body, .main {
 .sidebar {
     display: grid;
     grid-row: 1 / 3;
-    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: 125px repeat(auto-fill, minmax(45px, 1fr));
+    row-gap: 5px;
 }
 
 .header {
@@ -48,9 +49,50 @@ body, .main {
     grid-template-columns: 1fr 1fr;
 }
 
-/* ----------------- */
-
 .navbar, .userPanel {
     grid-column: 1 / 3;
+}
+
+/* Place Holder Icon for images and buttons */
+
+img {
+    content: url('./assets/magnify.svg');
+    max-width: 25px;
+}
+
+button {
+    background-image: url(./assets/magnify.svg);
+    width: 25px;
+    height: 25px;
+}
+
+/* ^^^Place Holder Icon for images and buttons */
+
+
+.sidebar div {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.navbar {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: start;
+}
+
+.search img {
+    justify-self: end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.search input {
+    margin-top: 20px;
 }
 
