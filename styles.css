@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, .main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    display: grid;
+    grid-row: 1 / 3;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.header {
+    display: grid;
+    grid-column: 2 / 4;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.aside {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ----------------- */
+
+.navbar, .userPanel {
+    grid-column: 1 / 3;
+}
+
