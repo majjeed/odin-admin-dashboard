@@ -207,12 +207,13 @@ img {
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    border: none;
 }
 
 .utilBar button:hover {
-        background: #3cb0fd;
-        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-        text-decoration: none;
+    background: #3cb0fd;
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
 
 }
 
@@ -245,3 +246,45 @@ img {
     left: 10%;
 }
 
+.searchBar {
+    font-size: 18px;
+    padding: 5px 10px;
+    width: 100%;
+    outline: none;
+    background: #D1D5DB;
+    color: #000000;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px 0px #E2E2E2;
+    transition: .3s ease;
+}
+
+.detailBar .userIcon,
+.trendingCards img {
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.userPanel .userIcon {
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+
+/* .trendingCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+.trendingCard {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    /* justify-items: center; */
+}
+
+.trendingCards {
+    margin: 15px;
+}
