@@ -1,3 +1,7 @@
+:root {
+    --background-color-1: #d1d5db;
+}
+
 *,
 *::before,
 *::after {
@@ -45,18 +49,32 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
-    margin: 20px;
+    padding: 20px;
+    background-color: var(--background-color-1);
+    position: relative;
+    z-index: -1;
 }
+
+.aside div {
+    background-color: white;
+}
+
+/* .aside div h2 {
+    background-color: var(--background-color-1);
+} */
 
 .mainContent {
     display: grid;
     grid-template-rows: 50px 1fr;
-
+    background-color: var(--background-color-1);
+    position: relative;
+    z-index: -1;
 }
 
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 25px;
 }
 
 .navbar, .userPanel {
@@ -139,7 +157,7 @@ button {
 
 .aside > div {
     box-shadow: 6px 8px 6px -6px rgba(0, 0, 0, 0.4);
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .aside div h2 {
@@ -150,4 +168,15 @@ button {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.card {
+    margin: 25px;
+    /* border: 2px solid black; */
+    border-radius: 5%;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-shadow: inset 10px 0px 0px -3px rgb(255, 196, 0),
+    6px 8px 6px -6px rgba(0, 0, 0, 0.4);
+    background-color: white;
 }

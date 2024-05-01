@@ -1,0 +1,10 @@
+https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-properties
+https://codepen.io/Arturop/pen/yLrweBz
+https://www.bram.us/2021/01/28/form-validation-you-want-notfocusinvalid-not-invalid/
+https://css-tricks.com/almanac/properties/b/box-shadow/
+https://css-tricks.com/snippets/css/form-validation-styling-on-input-focus/
+https://codepen.io/haibnu/pen/DrVweV
+https://github.com/majjeed/odin-admin-dashboard
+https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
+https://pictogrammers.com/library/mdi/icon/magnify/
+https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-positioning-grid-elements
