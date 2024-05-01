@@ -55,7 +55,7 @@ body {
     padding: 20px;
     background-color: var(--background-color-1);
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 
 .aside div {
@@ -71,7 +71,7 @@ body {
     grid-template-rows: 50px 1fr;
     background-color: var(--background-color-1);
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 
 .cards {
@@ -144,6 +144,7 @@ img {
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr 2.5fr;
     align-items: center;
+    z-index: 999;
 }
 
 .userPanel img {
@@ -207,4 +208,33 @@ img {
         background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
         text-decoration: none;
 
+}
+
+.cardButtons button {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+}
+
+.cardButtons button:hover {
+    background-color: var(--background-color-2);
+}
+
+.fav {
+    background-image: url(./assets/icons/star-plus-outline.svg);
+}
+
+.watch {
+    background-image: url(./assets/icons/eye-plus-outline.svg);
+}
+
+.share {
+    background-image: url(./assets/icons/share-variant-outline.svg);
+}
+
+.aside hr {
+    width: 80%;
+    position: relative;
+    left: 10%;
 }
