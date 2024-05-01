@@ -78,7 +78,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 250px;
-    gap: 25px;
+    /* gap: 25px; */
 }
 
 .navbar,
@@ -129,6 +129,7 @@ img {
     justify-self: end;
     margin-top: 20px;
     margin-right: 20px;
+    max-width: 40px;
 }
 
 .search input {
@@ -137,20 +138,22 @@ img {
 
 .detailBar {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+    gap: 25px;
 }
 
-.detailBar>* {
+/* .detailBar>* {
     margin-top: 20px;
-}
+} */
 
 .userPanel {
     box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 2.5fr;
+    grid-template-columns: 0.5fr 2.5fr 0.5fr 2.5fr;
     align-items: center;
     z-index: 999;
+    padding-left: 20px;
 }
 
 .userPanel img {
@@ -164,6 +167,9 @@ img {
 
 .userPanel .utilBar {
     grid-column: 4;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
 .aside h2 {
@@ -180,12 +186,21 @@ img {
 .card {
     margin: 25px;
     /* border: 2px solid black; */
-    border-radius: 5%;
-    padding-top: 10px;
-    padding-left: 10px;
+    border-radius: 10px;
+    padding: 10px 10px 0px 20px;
     box-shadow: inset 10px 0px 0px -3px rgb(255, 196, 0),
         6px 8px 6px -6px rgba(0, 0, 0, 0.4);
     background-color: white;
+    display: grid;
+    gap: 10px;
+}
+
+.card h3 {
+    padding-top: 10px;
+}
+
+.card .cardButtons{
+    justify-self: end;
 }
 
 .sidebar-link p a {
@@ -209,7 +224,6 @@ img {
     background: #3cb0fd;
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
-
 }
 
 .cardButtons button {
@@ -285,5 +299,11 @@ img {
     padding: 20px;
     box-shadow: 6px 8px 6px -6px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
+}
+
+.mainContent h2 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 30px;
 }
 
