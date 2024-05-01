@@ -50,7 +50,7 @@ body {
 
 .aside {
     display: grid;
-    grid-template-rows: 20px calc(1fr -30px) 20px calc(1fr - 100px);
+    grid-template-rows: 20px calc(1fr-50px) 20px calc(.5fr-150px);
     gap: 30px;
     padding: 20px;
     background-color: var(--background-color-1);
