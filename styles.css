@@ -91,6 +91,11 @@ body {
 img {
     /* content: url('./assets/magnify.svg'); */
     max-width: 25px;
+    color: white;
+}
+
+.head img {
+    color: red;
 }
 
 /* button {
