@@ -51,7 +51,7 @@ body {
 .aside {
     display: grid;
     grid-template-rows: 20px calc(1fr-50px) 20px calc(.5fr-150px);
-    gap: 30px;
+    gap: 15px;
     padding: 20px;
     background-color: var(--background-color-1);
     position: relative;
@@ -164,11 +164,6 @@ img {
 
 .userPanel .utilBar {
     grid-column: 4;
-}
-
-.aside>div {
-    box-shadow: 6px 8px 6px -6px rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
 }
 
 .aside h2 {
@@ -285,6 +280,10 @@ img {
     /* justify-items: center; */
 }
 
-.trendingCards {
-    margin: 15px;
+.trending,
+.announce {
+    padding: 20px;
+    box-shadow: 6px 8px 6px -6px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
 }
+
