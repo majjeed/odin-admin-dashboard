@@ -12,7 +12,7 @@
 }
 
 body {
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -111,6 +111,8 @@ img {
     display: flex;
     align-items: center;
     margin-left: 25px;
+    gap: 15px;
+    font-size: 18px;
 }
 
 .navbar {
